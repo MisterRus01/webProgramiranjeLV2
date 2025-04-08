@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Vizualizacija vremenskih podataka.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grafikon vremena</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+      <h1>Grafikon vremenskih tipova</h1>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="grafikon.html">Grafikon</a></li>
+          <li><a href="slike.html">Galerija</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <!-- Radio gumbi (skriveni) -->
+    <input type="radio" name="view" id="pie" checked>
+    <input type="radio" name="view" id="bar">
+  
+    <main>
+      <section>
+        <form class="view-selector">
+          <label for="pie">Pie Chart</label>
+          <label for="bar">Histogram</label>
+        </form>
+  
+        <article class="pie-chart" aria-label="Pie chart prikaz vremena"></article>
+  
+        <article class="bar-chart" aria-label="Histogram prikaz vremena">
+          <section class="bar sunny"></section>
+          <section class="bar cloudy"></section>
+          <section class="bar rainy"></section>
+          <section class="bar snowy"></section>
+        </article>
+  
+        <section class="bar-labels" aria-hidden="true">
+          <span>Sunny</span>
+          <span>Cloudy</span>
+          <span>Rainy</span>
+          <span>Snowy</span>
+        </section>
+      </section>
+    </main>
+  
+    <footer>
+      <p>&copy; 2025 Vremenski Podaci – Grafikon</p>
+    </footer>
+  
+  </body>
+
+</html>
